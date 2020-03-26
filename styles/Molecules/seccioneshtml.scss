@@ -1,0 +1,44 @@
+//======================================//
+////////////////BODY/////////////////
+//======================================//
+
+body {
+  background-color: $rosablanco;
+}
+
+//======================================//
+////////////////HEADERFIXED/////////////////
+//======================================//
+
+header {
+  .headerwelcome {
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 23px;
+    color: $blanco;
+    @extend %ChakraReg;
+    background-image: $rosaazul;
+    box-shadow: $shadowbox;
+    p {
+      font-size: 12px;
+      margin-left: 8px;
+    }
+  }
+}
+
+//======================================//
+////////////////MAINBODY/////////////////
+//======================================//
+
+.mainbody {
+  padding: 10vh 8vw;
+}
+.mainbodycreation {
+  padding: 10vh 8vw;
+}
+.displaynone {
+  display: none;
+}

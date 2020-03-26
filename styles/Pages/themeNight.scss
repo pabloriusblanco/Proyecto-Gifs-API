@@ -1,0 +1,228 @@
+/////////////// GENERALES //////////////////
+
+body {
+  background-color: #170939;
+}
+
+.headermain {
+  .logo-contenedor {
+    background-image: url("../img/gifOF_logo_dark.png");
+  }
+  .botonesbuscador {
+    .themeClick {
+      .themeClickMain {
+        .cuadrado {
+          .contenedorDropDown {
+            background-image: url("../img/dropdown-blanco.svg");
+            border: 1px dotted #ee3efe;
+            &:hover {
+              border: 1px dotted $blanco;
+            }
+          }
+        }
+      }
+      .grisfondovetana {
+        .contenedorSailor {
+          .sailor {
+            background: #2E32FB;
+            border: 1px solid rgba(51,53,143,0.20);
+            box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+            cursor: unset;
+            &:hover {
+              background-color: #2E32FB;
+            }
+            p {
+            color: $blanco;
+            }
+          }
+          .desactivoSailor {
+            background: #CCCCCC;
+            border: 1px solid #808080;
+            box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+            cursor: pointer;
+            p {
+              color: #110038;
+              }
+              &:hover {
+                background-color: #fff4fd;
+              }
+          }
+        }
+      }
+    }
+    .agifos {
+      p {
+        color: $blanco;
+        border: 1px dotted #110038;
+        &:hover {
+          border: 1px dotted $blanco;
+        }
+        &:active {
+          color: #b4b4b4;
+          border: 1px dotted #110038;
+        }
+      }
+    }
+  }
+}
+
+header {
+  .headerwelcome {
+    background-image: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%);
+  }
+}
+
+.headerazulrosa {
+  background-image: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%);
+}
+
+.botonazul {
+  background: #2E32FB;
+  border: 1px solid #4c2f99;
+  box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+  &:hover {
+    background: #2629CC;
+  }
+  p {
+    @extend %regularblanco14;
+    line-height: 18px;
+    letter-spacing: 0;
+    margin: 8px 10px;
+  }
+}
+
+.botonrosa {
+  background-color: #ee3efe;
+  &:hover {
+    background-color: #a72cb3;
+  }
+  p {
+    color: $blanco;
+    border: 1px dotted #ee3efe;
+    &:hover {
+      border: 1px dotted #110038;
+    }
+  }
+}
+
+.cancelar {
+  background-color: #110038;
+  &:hover {
+    background-color: #110038;
+  }
+  p {
+    color: $blanco;
+    border: 1px dotted transparent;
+    &:hover {
+      border: 1px dotted white;
+    }
+  }
+}
+
+/// VARIABLES ///
+
+.ventanaupload {
+  background-color: #b4b4b4;
+}
+
+.grisfondovetana {
+  background-color: #b4b4b4;
+}
+
+
+.sugerenciasprincipal {
+  .previewgifs {
+    .gifPreview {
+      background-color: #b4b4b4;
+    }
+  }
+}
+
+
+.contenedorVentanaBuscador {
+  .grisfondovetana {
+  .barra-contenedor{
+  .botonbusqueda {
+    background-color: #b4b4b4;
+  }
+}
+}
+.resultadosSugeridos3 {
+  background: #B4B4B4;
+  box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+  .contenedorResultadosSugeridos3 {
+    .resultadosugerido {
+      background: #CCCCCC;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+      &:hover {
+        background-color: #f0f0f0;
+        border: 1px dotted #110038;
+      }
+    }
+  }
+}
+}
+
+/////////////// UPLOAD HTML //////////////////
+
+
+.headergifcreation {
+  .flechagifcreation {
+    background-image: url("../img/arrow-night.svg");
+  }
+  .logo-contenedor {
+    background-image: url("../img/gifOF_logo_dark.png");
+  }
+}
+
+.chequeo {
+  display: none;
+  .contenedorVentana {
+    margin: 8px;
+  }
+}
+
+.chequeo {
+  .botonescaptura {
+    .botonesCancelarCaptura {
+      .contenedorCamaraCaptura {
+        .botoncuadrado {
+          background-image: url("../img/camera_light.svg");
+        }
+      }
+    }
+  }
+}
+
+.principalVistaprevia {
+  .controlesTusGifos {
+    .contenedorProgreso {
+      .foward {
+        background: #EE3EFE ;
+        background-size: 6px;
+        background-image: url("../img/forward light.svg");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+    }
+  }
+}
+
+.barraDeProgreso {
+  .barraRosaProgreso {
+    background: #EE3EFE;
+  }
+}
+
+.ventanaExito {
+  .contenedorVentana {
+    .opcionesEnlace {
+      .botonrosa {
+        p {
+          color: #110038;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,364 @@
+//======================================//
+////////////////LOGO Y FLECHA///////////////
+//======================================//
+
+.headergifcreation {
+  padding-top: 60px;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  .flechagifcreation {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 7px;
+    background-image: url("../img/arrow.svg");
+  }
+  .logo-contenedor {
+    width: 90px;
+    height: 48px;
+    background-image: url("../img/gifOF_logo.png");
+  }
+}
+
+//======================================//
+/////////////INSTRUCCIONES + LOCAL///////////////
+//======================================//
+
+.principalcreaciongif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .ventanaupload {
+    display: none;
+    margin-bottom: 150px;
+    .tutorial1 {
+      position: absolute;
+    }
+    .tutorial2 {
+      @extend %ChakraBold;
+      @extend %regularnegro16;
+      margin-left: 50px;
+    }
+    .tutorial3 {
+      margin-top: 17px;
+      margin-left: 50px;
+      margin-bottom: 28px;
+      p {
+        @extend %regularnegro14;
+        line-height: 20px;
+        span {
+          @extend %ChakraBold;
+        }
+      }
+    }
+    .contenedorBotones {
+      display: flex;
+      justify-content: flex-end;
+      .cancelar {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.misgifosseccion {
+  width: 100%;
+}
+
+//======================================//
+////////////////PREVIEW//////////////////
+//======================================//
+
+.chequeo {
+  display: none;
+  .contenedorVentana {
+    margin: 8px;
+  }
+  .botonescaptura {
+    display: flex;
+    margin-top: 13px;
+    .botonesCancelarCaptura {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 8px 16px 8px;
+      .contenedorCamaraCaptura {
+        display: flex;
+        .botonrosa {
+          width: 144px;
+          p {
+            padding: 3px 40px;
+          }
+        }
+        .botoncuadrado {
+          background-image: url("../img/camera.svg");
+          width: 36px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  .botonesTimerListo {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    .contenedorCamaraListo {
+      display: flex;
+      .botonrosa {
+        width: 144px;
+        background-color: #ff6161;
+        p {
+          color: $blanco;
+          border: 1px dotted #ff6161;
+          padding: 3px 40px;
+          &:hover {
+            border: 1px dotted $blanco;
+          }
+        }
+      }
+      .botoncuadrado {
+        width: 36px;
+        img {
+          border: 1px dotted #ff6161;
+          &:hover {
+            border: 1px dotted $blanco;
+          }
+        }
+      }
+    }
+  }
+}
+
+//======================================//
+///////////////GIF PROPIOS//////////////////
+//======================================//
+
+.principalVistaprevia {
+  display: none;
+  .contenedorVentana {
+    margin: 8px;
+    .contenedorvideo {
+      margin-bottom: 16px;
+    }
+  }
+  .controlesTusGifos {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    .tiempo {
+      margin-bottom: 0px;
+    }
+    .contenedorProgreso {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin-left: 24px;
+      margin-right: 24px;
+      .foward {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        background: #f7c9f3;
+        box-shadow: inset 2px 2px 0 0 #fffcfc, inset -2px -2px 0 0 #000000;
+        background-image: url("../img/forward.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    .botonrosa {
+      margin: 0px 8px;
+    }
+  }
+}
+
+//======================================//
+////////////SUBIENDO GIFO////////////////
+//======================================//
+
+.subiendoGifo {
+  display: none;
+  .contenedorVentana {
+    margin: 8px 8px 16px 8px;
+    justify-items: center;
+    .contenedorupload {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 650px;
+      height: 350px;
+      background: #ffffff;
+      border: 1px solid #979797;
+      box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+      margin-bottom: 16px;
+      .textoGlobo {
+        @extend %regularnegro16;
+        @extend %ChakraBold;
+        margin-bottom: 40px;
+      }
+      .textoRestante {
+        @extend %ChakraReg;
+        font-size: 12px;
+        color: rgba(17, 0, 56, 0.64);
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 14px;
+        margin-top: 8px;
+        span {
+          text-decoration: line-through;
+        }
+      }
+      .contenedorBarraProgreso2 {
+        width: 240px;
+        .barraDeProgreso {
+          height: 21px;
+          background: #f7c9f3;
+          box-shadow: none;
+          span {
+            border: 1px solid $blanco;
+          }
+        }
+      }
+    }
+  }
+}
+
+//======================================//
+///////GIFO SUBIDO CON EXITO////////////
+//======================================//
+
+.ventanaExito {
+  display: none;
+  .contenedorVentana {
+    width: 650px;
+    margin: 8px 8px 16px 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .opcionesEnlace {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 30px 60px 30px;
+      .contenedorSmallGifo {
+        width: 350px;
+        background: #ffffff;
+        border: 1px solid #979797;
+        box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+        margin-right: 26px;
+        img {
+          width: 100%;
+        }
+      }
+      .pConExito {
+        @extend %regularnegro16;
+        @extend %ChakraBold;
+        margin-bottom: 16px;
+      }
+      .botonrosa {
+        margin-bottom: 16px;
+        background-color: #fff4fd;
+        &:hover {
+          background-color: #f7c9f3;
+        }
+        p {
+          border: none;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    .contenedorBotones {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      .botonrosa {
+        margin: 0px 30px 30px 0;
+      }
+      .testinput {
+        width: 100%;
+        @extend %ChakraReg;
+        font-size: 14px;
+        color: rgba(17, 0, 56, 0.64);
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 14px;
+        height: 36px;
+        padding: 0;
+        margin: 0px 30px 30px 30px;
+      }
+    }
+  }
+}
+
+//======================================//
+////////////GALERIA GIFOS/////////////
+//======================================//
+
+
+.misgifosseccion {
+  display: flex;
+flex-direction: column;
+  .misgifosyBotonBorrar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .botonBorrarLocal {
+      margin-left: 16px;
+      width: 215px;
+      background-color: #ff6161;
+      margin-bottom: 16px;
+      &:hover {
+        background-color: #cf3434;
+      }
+      p {
+        border: none;
+        color: $blanco;
+        padding: 3px 28px;
+      }
+    }
+  }
+  .galeriaMisGifos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .tendGif {
+      // background: linear-gradient(-45deg, #f7c9f3, #4180f6, #ee3efe, #2e32fb);
+      // background-size: 300% 300%;
+      // animation: 2s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: inset -2px -2px 0 0 transparent,
+        inset 2px 2px 0 0 transparent;
+      &:hover {
+        box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+      }
+      img {
+        height: 98%;
+        width: 98%;
+        opacity: 0.75;
+        &:hover {
+          opacity: 1;
+          border: 1px dotted #110038;
+          height: 105%;
+          width: 105%;
+        }
+      }
+    }
+    .small {
+      margin: 8px;
+      height: 19vw;
+      width: 19vw;
+    }
+  }
+}

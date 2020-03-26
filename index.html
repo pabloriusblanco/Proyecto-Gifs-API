@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>gifOS v1</title>
+  <link rel="stylesheet" type="text/css" href="./styles/normalize.css.css"/>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css" id="theme" />
+  <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700,700i&display=swap&subset=latin-ext"
+    rel="stylesheet" />
+  <script src="script.js"></script>
+</head>
+
+<body id="body">
+  <header>
+    <div class="headerwelcome">
+      <p>
+        ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
+        de visitas: 12.765.803
+      </p>
+    </div>
+  </header>
+
+  <div class="mainbody">
+    <div class="headermain">
+      <div class="logo-contenedor" title="Logo GifOs">
+      </div>
+      <div class="botonesbuscador">
+        <div class="botonrosa" id="crearGifos">
+          <p>Crear Guifos</p>
+        </div>
+        <div class="themeClick">
+          <div class="themeClickMain">
+            <div class="botonrosa botonestema">
+              <p>Elegir tema</p>
+            </div>
+            <div class="botonrosa cuadrado botonestema">
+              <div class="contenedorDropDown"></div>
+            </div>
+          </div>
+          <div class="grisfondovetana botonesSailors displaynone">
+            <div class="contenedorSailor">
+              <div class="sailor" id="SailorDay">
+                <p>Sailor Day</p>
+              </div>
+              <div class="sailor desactivoSailor" id="SailorNight">
+                <p>Sailor Night</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="upload.html" class="agifos">
+          <p>Mis Gifos</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="contenedorVentanaBuscador">
+      <div class="grisfondovetana">
+        <div class="headerazulrosa">
+          <p>Buscar</p>
+        </div>
+        <div class="barra-contenedor">
+          <input type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" id="inputbusqueda" />
+          <div class="botonbusqueda">
+            <img src="./img/lupa_inactive.svg" alt="logo de lupa" class="lupainactivo" />
+            <img src="./img/lupa.svg" alt="logo de lupa" class="lupafocus" id="lupafocus" />
+            <img src="./img/lupa_light.svg" alt="logo de lupa" class="lupalight" />
+            <p id="textoBuscar">Buscar</p>
+          </div>
+        </div>
+      </div>
+      <div class="resultadosSugeridos3 grisfondovetana" id="3resultadossugeridos">
+        <div class="contenedorResultadosSugeridos3">
+          <div class="resultadosugerido">
+            <p class="textoSugerido">Resultado de búsqueda sugerido</p>
+          </div>
+          <div class="resultadosugerido">
+            <p class="textoSugerido">Un resultado similar de búsqueda</p>
+          </div>
+          <div class="resultadosugerido">
+            <p class="textoSugerido">Y otro más</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ultimasBusquedas"></div>
+
+    <div class="sugerenciasprincipal">
+      <div class="formventana">
+        <p>Hoy te sugerimos:</p>
+      </div>
+      <div class="previewgifs" id="tendenciasrecuadros">
+        <!-- TENDENCIAS RECUADROS-->
+        <div class="gifPreview">
+          <div class="headerazulrosa">
+            <p class="tendenciasnombre">Rick & Morty</p>
+            <img src="./img/button3.svg" alt="cruz de cerrado de pantalla" />
+          </div>
+          <div class="maingifPreview">
+            <button class="botonazul botonazulSugerencias">
+              Ver más...
+            </button>
+          </div>
+        </div>
+        <div class="gifPreview">
+          <div class="headerazulrosa">
+            <p class="tendenciasnombre">Motivacional</p>
+            <img src="./img/button3.svg" alt="cruz de cerrado de pantalla" />
+          </div>
+          <div class="maingifPreview">
+            <button class="botonazul botonazulSugerencias">
+              Ver más...
+            </button>
+          </div>
+        </div>
+        <div class="gifPreview">
+          <div class="headerazulrosa">
+            <p class="tendenciasnombre">Futurama</p>
+          </div>
+          <div class="maingifPreview">
+            <button class="botonazul botonazulSugerencias">
+              Ver más...
+            </button>
+          </div>
+        </div>
+        <div class="gifPreview">
+          <div class="headerazulrosa">
+            <p class="tendenciasnombre">Tecnologia</p>
+            <img src="./img/button3.svg" alt="cruz de cerrado de pantalla" />
+          </div>
+          <div class="maingifPreview">
+            <button class="botonazul botonazulSugerencias">
+              Ver más...
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="busquedaPrincipal">
+      <div class="formventana">
+        <p id="textoTendenciasBusquedas">Tendencias:</p>
+      </div>
+      <div class="searchedPreviewGifs">
+        <div class="previewTendGif"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

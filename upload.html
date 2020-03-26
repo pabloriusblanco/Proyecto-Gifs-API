@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>gifOS v1</title>
+  <link rel="stylesheet" type="text/css" href="./styles/normalize.css.css"/>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css" id="theme"/>
+  <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700,700i&display=swap&subset=latin-ext"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+  <script src="upload.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="headerwelcome">
+      <p> ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
+        de visitas: 12.765.803 </p>
+    </div>
+    <div class="headergifcreation">
+      <div class="flechagifcreation" id="flecha" title="flecha">
+      </div>
+      <div class="logo-contenedor" title="Logo GifOs">
+      </div>
+    </div>
+  </header>
+
+  <div class="mainbodycreation">
+    <div class="principalcreaciongif">
+      <div class="ventanaupload" id="uploadindex">
+        <div class="headerazulrosa">
+          <p>Crear Guifos</p>
+        </div>
+        <div class="contenedorVentana">
+          <div class="tutorial1">
+            <img src="./img/windowimg.png" alt="icono de ventana">
+          </div>
+          <div class="tutorial2">
+            <p>Aquí podrás crear tus propios guifos</p>
+          </div>
+          <div class="tutorial3">
+            <p>Crear tu <span>guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos<br>
+              personalizados. Los pasos para crear tu guifo son:<br><br>
+              <span>1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br>
+              <span>2)</span> Capturar tu momento guifo<br>
+              <span>3)</span> Revisar el momento<br>
+              <span>4)</span> Listo para subir y compartir!<br>
+              ¿Quieres comenzar a crear tu <span>guifo</span> ahora?</p>
+          </div>
+          <div class="contenedorBotones">
+            <div class="botonrosa cancelar" id="botoncancelar">
+              <p>Cancelar</p>
+            </div>
+            <div class="boton botoncomenzar botonrosa" id="botoncomenzar">
+              <p>Comenzar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ventanaupload chequeo" id="ventanavideoprincipal">
+        <div class="headerazulrosa">
+          <p id="tituloventana">Un Chequeo Antes de Empezar</p>
+        </div>
+        <div class="contenedorVentana">
+          <div class="contenedorvideo" id="contenedorvideo">
+            <video id="videopreview"></video>
+          </div>
+
+          <div class="botonescaptura">
+            <div class="botonesCancelarCaptura">
+              <div class="botonrosa cancelar" id="botoncancelar2">
+                <p>Cancelar</p>
+              </div>
+              <div class="contenedorCamaraCaptura">
+                <div class="botonrosa botoncuadrado">
+                </div>
+                <div class="botonrosa" id="botoncaptura">
+                  <p>Captura</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="botonesTimerListo">
+            <div class="tiempo">
+              <p class="timer" id="timer">00:00:00</p>
+            </div>
+            <div class="contenedorCamaraListo">
+              <div class="botonrosa botoncuadrado">
+                <img src="./img/recording.svg" alt="imagen vectorizada de una lente" />
+              </div>
+              <div class="botonrosa" id="botonListo">
+                <p>Listo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ventanaupload principalVistaprevia" id="principalVistaprevia">
+        <div class="headerazulrosa">
+          <p>Vista Previa</p>
+        </div>
+        <div class="contenedorVentana">
+          <div class="contenedorvideo" id="contenedorvideo2">
+          </div>
+          <div class="controlesTusGifos">
+            <div class="tiempo">
+              <p class="timer">00:00:00</p>
+            </div>
+            <div class="contenedorProgreso">
+              <div class="foward" id="foward">
+              </div>
+              <div class="barraDeProgreso" id="barraDeProgreso">
+                <div class="separadores">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="barraRosaProgreso" id="barraRosaProgreso">
+                </div>
+              </div>
+            </div>
+            <div class="botonrosa cancelar" id="repetircaptura">
+              <p>Repetir Captura</p>
+            </div>
+            <div class="botonrosa" id="botonsubirgif">
+              <p>Subir Guifo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ventanaupload subiendoGifo" id="subiendoGifo">
+        <div class="headerazulrosa">
+          <p>Subiendo Guifo</p>
+        </div>
+        <div class="contenedorVentana">
+          <div class="contenedorupload" id="contenedorupload">
+            <img src="./img/globe_img.png" alt="Globe tipo windows 95">
+            <p class="textoGlobo">Estamos subiendo tu guifo…</p>
+            <div class="contenedorBarraProgreso2">
+              <div class="barraDeProgreso" id="barraDeProgreso2">
+                <div class="separadores">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="barraRosaProgreso">
+                </div>
+              </div>
+            </div>
+            <p class="textoRestante">Tiempo restante: <span>38 años</span> algunos minutos</p>
+          </div>
+          <div class="contenedorBotones">
+            <div class="botonrosa cancelar" id="botoncancelarsubida">
+              <p>Cancelar</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ventanaupload ventanaExito" id="ventanaExito">
+        <div class="headerazulrosa">
+          <p>Guifo Subido Con Éxito</p>
+        </div>
+        <div class="contenedorVentana">
+          <div class="opcionesEnlace">
+            <div class="contenedorSmallGifo" id="contenedorSmallGifo">
+            </div>
+            <div class="opcionesEnlaceBotones">
+              <p class="pConExito">Guifo creado con éxito</p>
+              <div class="boton botonrosa botonCopiar" id="botonCopiar">
+                <p>Copiar Enlace Guifo</p>
+              </div>
+              <a href="#" id="descarga" download>
+                <div class="boton botonrosa botonDescargar" id="botonDescargar">
+                  <p>Descargar Guifo</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contenedorBotones inputylisto">
+            <div class="botonrosa" id="botonListoExito">
+              <p>Listo</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="misgifosseccion" id="misgifosprincipal">
+      <div class="misgifosyBotonBorrar">
+        <div class="formventana">
+          <p>Mis Gifos</p>
+        </div>
+        <div class="botonrosa botonBorrarLocal" id="botonBorrarLocal">
+          <p>Borrar Gifos</p>
+        </div>
+      </div>
+      <div class="galeriaMisGifos" id="galeriaMisGifos"></div>
+    </div>
+  </div>
+</body>
